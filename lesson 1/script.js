@@ -33,17 +33,25 @@
 ////var answer = prompt("Вам есть 18?", "18");
 //console.log( typeof(arr));
 
-var budzhet = prompt("Ваш бюджет?", "100 грн");
-var nameShop = prompt("Название вашего магазина?");
+// var budzhet = prompt("Ваш бюджет?", "100 грн");
+// var nameShop = prompt("Название вашего магазина?");
+//
+// var mainList = {
+// 	budzhet: 10000,
+// 	nameShop: "Rognezia",
+// 	var shopGoods = ['1','2','3','4'];
+// 	employers = {
+// 		name: "John",
+// 		age: 33,
+// 		isMarried: false
+// 	}
+//
+// }
+let btn = document.getElementsByTagName('button');
+btn[0].addEventListener('click', function (event) {
+	console.log('Произошло событие: ' + event.type + ' на элементе ' + event.target );
+});
 
-var mainList = {
-	budzhet: 10000,
-	nameShop: "Rognezia",
-	var shopGoods = ['1','2','3','4'];
-	employers = {
-		name: "John",
-		age: 33,
-		isMarried: false
-	}
-	
-}
+btn[1].addEventListener('mouseenter', function (event) {
+	console.log('Произошло событие: ' + event.type + ' на элементе ' + event.target );
+});
